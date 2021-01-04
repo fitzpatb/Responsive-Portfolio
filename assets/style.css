@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+}
+
+html,
+body {
+ height: 100%;
+ position: relative;
+}
+
+.page-container {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px; /* height of your footer */
+}
+footer {
+  background-color: brown;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
