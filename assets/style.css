@@ -63,3 +63,12 @@ footer {
   width: auto;
   height: 350px;
 }
+
+.btn {
+  margin-bottom: 10px;;
+}
+
+.border-top {
+  background-color: #343a40;
+  padding:5px;
+}
