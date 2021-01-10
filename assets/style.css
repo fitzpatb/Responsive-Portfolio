@@ -1,6 +1,4 @@
-h1 {
-  text-align: center;
-}
+/* General Page Structure */
 
 html,
 body {
@@ -11,21 +9,21 @@ body {
  line-height: 1.5;
 }
 
+.special {
+  font-family: 'Yellowtail', cursive;
+}
+
+h1 {
+  text-align: center;
+}
+
 #page-container {
   position: relative;
   min-height: 100vh;
 }
 
 #content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
-}
-
-footer {
-  background-color: #343a40;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
+  padding-bottom: 2.5rem;
 }
 
 .container {
@@ -36,14 +34,6 @@ footer {
   overflow: hidden;
 }
 
-.about {
-  display: inline-block;
-  float: left;
-  margin-left: 5px;
-  margin-right: 10px;
-  padding-bottom:5px;
-}
-
 .my-border {
   border-color: #343a40;
   border-style: solid;
@@ -51,8 +41,16 @@ footer {
   background-color: lightgray;
 }
 
-.special {
-  font-family: 'Yellowtail', cursive;
+.border-top {
+  padding:5px;
+}
+
+footer {
+  background-color: #343a40;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
 }
 
 .white {
@@ -60,16 +58,48 @@ footer {
   margin: auto;
 }
 
-.card-img-top {
-  width: auto;
-  height: 350px;
+/* About page */
+
+.about {
+  display: inline-block;
+  float: left;
+  margin-left: 5px;
+  margin-right: 10px;
+  padding-top:10px;
+  padding-bottom:15px;
+}
+
+.family {
+  float:right;
+  margin-left:5px;
+  padding-bottom: 10px;
+}
+
+.slide {
+  padding-left: 25px;
+}
+/* contact page */
+
+#spacing {
+  padding-left: 12px;
 }
 
 .btn {
   margin-bottom: 10px;;
 }
 
-.border-top {
-  backgro: #343a40;
-  padding:5px;
+/* portfolio page */
+
+.card-img-top {
+  width: auto;
+  height: 350px;
 }
+
+.card {
+  min-width: 250px;
+}
+
+
+
+
+
