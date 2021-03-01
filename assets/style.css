@@ -62,7 +62,7 @@ footer {
 
 .about {
   display: inline-block;
-  float: left;
+  float:left;
   margin-left: 5px;
   margin-right: 10px;
   padding-top:10px;
@@ -99,7 +99,22 @@ footer {
   min-width: 250px;
 }
 
+.project-pic {
+  max-height:100%;
+  max-width: 100%;
+}
 
+ul {
+  font-weight: bold;
+  font-size: 24px;
+}
 
+li {
+  font-weight: normal;
+  font-size: 18px;
+}
 
+#modal-content {
+  overflow:scroll;
+}
 

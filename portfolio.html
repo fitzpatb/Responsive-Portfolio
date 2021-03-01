@@ -38,6 +38,38 @@
       </nav>
     </header>
     <main id="content-wrap">
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-lg modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-6" id="modal-pic"></div>
+                  <div class="col-6" id="modal-content">
+                    <ul id="modal-description">Description
+                      <li></li>
+                    </ul>
+
+                    <ul id="modal-contributions">Contributions</ul>
+                    <ul id="modal-technologies">Technologies</ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="container my-border col-lg-10 col-md-11 col-sm-11 col-xs-10">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
@@ -46,12 +78,71 @@
 
         </div>
         <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 border-top">
+
           <div class="col mb-4">
             <div class="card">
+              <img src="assets/images/Earworm-copy.gif" class="card-img-top" alt="Earworm Music Site gif">
+              <div class="card-body">
+                <h5 class="card-title">Earworm</h5>
+                <button type="button" class="btn btn-primary" id="earworm-modal" data-toggle="modal" data-target="#exampleModalCenter" value="Earworm">
+                  See Full Descritption
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="assets/images/site-copy.gif" class="card-img-top" alt="Weather Dashboard gif">
+              <div class="card-body">
+                <h5 class="card-title">Weather Dashboard</h5>
+                <button type="button" class="btn btn-primary" id="weather-modal" data-toggle="modal" data-target="#exampleModalCenter" value="Weather Dashboard">
+                  See Full Descritption
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-4">
+            <div class="card">
+              <img src="assets/images/calander-copy.gif" class="card-img-top" alt="Daily Calander gif">
+              <div class="card-body">
+                <h5 class="card-title">Daily Calander</h5>
+                <button type="button" class="btn btn-primary" id="calander-modal" data-toggle="modal" data-target="#exampleModalCenter" value="Daily Calander">
+                  See Full Descritption
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="assets/images/Code-Quiz-copy.gif" class="card-img-top" alt="Coding Quiz gif">
+              <div class="card-body">
+                <h5 class="card-title">Code Quiz</h5>
+                <button type="button" class="btn btn-primary" id="code-modal" data-toggle="modal" data-target="#exampleModalCenter" value="Code Quiz">
+                  See Full Descritption
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="assets/images/password-copy.gif" class="card-img-top" alt="Password Generator gif">
+              <div class="card-body">
+                <h5 class="card-title">Password Generator</h5>
+                <button type="button" class="btn btn-primary" id="password-modal" data-toggle="modal" data-target="#exampleModalCenter" value="Password Generator">
+                  See Full Descritption
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card" >
               <img src="assets/images/FlumePage.jpg" class="card-img-top" alt="Fanpage for Flume">
               <div class="card-body">
                 <h5 class="card-title">Flume Fanpage</h5>
-                <p class="card-text">A simple fanpage made for EDM artist Flume. It contains a list of top songs and even an interactive video of one of his top songs.</p>
+                <button type="button" class="btn btn-primary" id="flume-modal" data-toggle="modal" data-target="#exampleModalCenter" value="Flume Fanpage">
+                  See Full Descritption
+                </button>
               </div>
             </div>
           </div>
@@ -60,7 +151,9 @@
               <img src="assets/images/Twiddler.jpg" class="card-img-top" alt="Twitter Imitation site">
               <div class="card-body">
                 <h5 class="card-title">Twiddler</h5>
-                <p class="card-text">This is fun project I did that simulates a fake twitter. It can load new twids to the timeline and even allow you to post and write your own Twids.</p>
+                <button type="button" class="btn btn-primary" id="twiddler-modal" data-toggle="modal" data-target="#exampleModalCenter" value="Twiddler">
+                  See Full Descritption
+                </button>
               </div>
             </div>
           </div>
@@ -69,34 +162,9 @@
               <img src="assets/images/GetThePuff.jpg" class="card-img-top" alt="Site for online game by Scratch">
               <div class="card-body">
                 <h5 class="card-title">Scratch Game</h5>
-                <p class="card-text">A simple game made using Scratch. It includes a detailed description of how the game works and the steps in making it.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card">
-              <img src="assets/images/coming-soon.jpg" class="card-img-top" alt="Coming Soon">
-              <div class="card-body">
-                <h5 class="card-title">More to Come</h5>
-                <p class="card-text">Projects currently under construction.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card">
-              <img src="assets/images/coming-soon.jpg" class="card-img-top" alt="Coming Soon">
-              <div class="card-body">
-                <h5 class="card-title">More to Come</h5>
-                <p class="card-text">Projects currently under construction.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card">
-              <img src="assets/images/coming-soon.jpg" class="card-img-top" alt="Coming Soon">
-              <div class="card-body">
-                <h5 class="card-title">More to Come</h5>
-                <p class="card-text">Projects currently under construction.</p>
+                <button type="button" class="btn btn-primary" id="scratch-modal" data-toggle="modal" data-target="#exampleModalCenter" value="Scratch Game">
+                  See Full Descritption
+                </button>
               </div>
             </div>
           </div>
@@ -107,7 +175,7 @@
       <p class="white">Copyright Brett Fitzpatrick 2021</p>
     </footer>
   </div>
-
+  <script src="assets/logic.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
