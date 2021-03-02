@@ -114,7 +114,17 @@ li {
   font-size: 18px;
 }
 
-#modal-content {
-  overflow:scroll;
+.modal-lg {
+  max-height: 500px;
 }
 
+#modal-content {
+  overflow:scroll;
+  height: 48vh;
+}
+
+a, a:hover {
+  display:block;
+  color: white;
+  text-decoration: none;
+}
