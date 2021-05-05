@@ -1,6 +1,10 @@
+const petA = document.getElementById('pet-modal');
+const techA = document.getElementById('blog-modal');
+const teamA = document.getElementById('team-modal');
+const commerceA = document.getElementById('commerce-modal');
+const employeeA = document.getElementById('employee-modal');
+const noteA = document.getElementById('note-modal');
 var flumeA = document.getElementById('flume-modal');
-var twiddlerA = document.getElementById('twiddler-modal');
-var scratchA = document.getElementById('scratch-modal');
 var passwordA = document.getElementById('password-modal');
 var calanderA = document.getElementById('calander-modal');
 var codeA = document.getElementById('code-modal');
@@ -55,20 +59,20 @@ var whichProject = function(event) {
 
   var project = event.target.getAttribute('value');
   info.title = project;
-  if (project === "Twiddler") {
-    info.description = "This is fun project I did that simulates a fake twitter. It can load new twids to the timeline and even allow you to post and write your own Twids."
-    projectPic.src = "assets/images/Twiddler.jpg";
-    projectPic.alt = "Twitter Imitation site";
-    websiteBtn.style.display = "none";
-    one.textContent = "Used CSS to style the page.";
-    two.textContent = "Took a prewritten JavaScript to populate twids every second.";
-    three.textContent = "Saved user inputs to generate new twids."
+  if (project === "Note Taker") {
+    info.description = "With this project I was tasked with making a simple app that allows using to track and take notes using express."
+    projectPic.src = "assets/images/notes.gif";
+    projectPic.alt = "Simple note taking site";
+    websiteA.href = "https://still-waters-76808.herokuapp.com/";
+    one.textContent = "Created routes to link to express and keep track of notes";
+    two.textContent = "Used basic CSS template to style";
+    three.textContent = "Saved user inputs to keep track of notes, make new ones and delete old ones."
     four.style.display = "none";
     uno.textContent = "HTML";
     dos.textContent = "CSS";
     tres.textContent = "JavaScript";
-    cuatro.style.display = "none";
-    cinco.style.display = "none";
+    cuatro.textContent = "Express";
+    cinco.textContent = "Bootstrap";
     seis.style.display = "none";
     siete.style.display = "none";
 
